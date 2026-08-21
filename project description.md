@@ -454,45 +454,6 @@ Open your browser at [http://localhost:5173](http://localhost:5173) (or [http://
 
 ---
 
-## 📂 Sample Datasets & Example Prompts
-
-Four pre-loaded datasets are included in `sample-datasets/` for immediate exploration:
-
-### 1. `sales_data_2025.csv`
-- **Domain**: Retail & Commercial Operations
-- **Columns**: `Month`, `Region`, `Units_Sold`, `Advertising_Spend`, `Discount_Rate`, `Revenue`
-- **Example Prompts to Try**:
-  - *"What is the total revenue by region?"*
-  - *"Show a scatter plot of Advertising Spend vs Revenue with a trendline."*
-  - *"What is the correlation between Discount Rate and Units Sold?"*
-
-### 2. `customer_churn.csv`
-- **Domain**: Telecom Customer Retention
-- **Columns**: `CustomerID`, `Age`, `Tenure_Months`, `Contract_Type`, `Monthly_Charges`, `Support_Calls`, `Churn`
-- **Example Prompts to Try**:
-  - *"What is the churn rate by Contract Type?"*
-  - *"Train a classification model predicting Churn based on Monthly Charges and Support Calls."*
-  - *"Show a boxplot of Monthly Charges across Churned vs Non-Churned customers."*
-
-### 3. `housing_prices.csv`
-- **Domain**: Real Estate Valuation (Contains intentional missing values & outliers)
-- **Columns**: `Square_Footage`, `Bedrooms`, `Bathrooms`, `Year_Built`, `Neighborhood_Rating`, `Price`
-- **Example Prompts to Try**:
-  - *"Profile the missing values in this dataset."*
-  - *"Clean missing values using median imputation and remove price outliers."*
-  - *"Train a Random Forest regression model to predict housing Price."*
-
-### 4. `marketing_campaign.csv`
-- **Domain**: Digital Advertising Performance
-- **Columns**: `Campaign_ID`, `Channel`, `Impressions`, `Clicks`, `Conversions`, `Spend`, `ROI`
-- **Example Prompts to Try**:
-  - *"Which advertising channel yielded the highest ROI?"*
-  - *"Compare conversion rates across channels using a bar chart."*
-
----
-
-## 🧪 Testing & Quality Assurance
-
 ### Python AI Service Test Suite
 ```bash
 cd ai-service
