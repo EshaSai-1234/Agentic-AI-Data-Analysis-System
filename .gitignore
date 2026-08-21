@@ -1,0 +1,279 @@
+# ==============================================================================
+# Comprehensive .gitignore for Agentic AI Data Analysis & Visualization Assistant
+# Polyglot Stack: Python (FastAPI) | Java (Spring Boot / Maven) | TypeScript (React / Vite) | Docker / PostgreSQL
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Operating System & Local Environment Files
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ------------------------------------------------------------------------------
+# 2. IDE, Editor & Tooling Configs
+# ------------------------------------------------------------------------------
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+.ionide/
+
+# IntelliJ IDEA / JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# Eclipse & NetBeans
+.classpath
+.project
+.settings/
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+nbproject/private/
+build.xml
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# ------------------------------------------------------------------------------
+# 3. Environment Variables, Credentials & Secret Keys
+# ------------------------------------------------------------------------------
+# Secrets & API Keys
+.env
+.env.*
+!.env.example
+!.env.test.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.cer
+*.crt
+id_rsa
+id_rsa.pub
+credentials.json
+client_secret*.json
+
+# ------------------------------------------------------------------------------
+# 4. Node.js & React / Vite Frontend
+# ------------------------------------------------------------------------------
+frontend/node_modules/
+node_modules/
+jspm_packages/
+web_modules/
+
+# Production frontend builds
+frontend/dist/
+frontend/dist-ssr/
+frontend/build/
+dist/
+build/
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Vite & Bundler cache
+.vite/
+.turbo/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Next / Nuxt / Framework artifacts if added
+.next/
+.nuxt/
+
+# ------------------------------------------------------------------------------
+# 5. Python & FastAPI AI Service
+# ------------------------------------------------------------------------------
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+ai-service/__pycache__/
+ai-service/**/__pycache__/
+
+# Virtual Environments
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+ai-service/venv/
+ai-service/.venv/
+ai-service/env/
+
+# Python Distribution & Packaging
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testing & Coverage
+.pytest_cache/
+ai-service/.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+htmlcov/
+.tox/
+.nox/
+
+# Type Checking & Linters
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# Jupyter Notebooks (if used for experimentation)
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# ------------------------------------------------------------------------------
+# 6. Java, Spring Boot & Maven
+# ------------------------------------------------------------------------------
+# Maven target directory
+backend/target/
+target/
+*.class
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven wrapper executable if not tracked (wrapper scripts are kept)
+.mvn/wrapper/maven-wrapper.jar
+!backend/.mvn/wrapper/maven-wrapper.jar
+
+# Maven release & versioning artifacts
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.properties.bak
+.flattened-pom.xml
+
+# JVM Crash logs & Profiling
+hs_err_pid*
+replay_pid*
+
+# ------------------------------------------------------------------------------
+# 7. Database, Docker & Runtime Storage
+# ------------------------------------------------------------------------------
+# Docker volumes & PostgreSQL local mounts
+postgres_data/
+shared_storage/
+*.sqlite
+*.sqlite3
+*.db
+
+# Dynamic upload and generated artifact storage
+storage/uploads/*
+!storage/uploads/.gitkeep
+storage/temp/*
+!storage/temp/.gitkeep
+storage/reports/*
+!storage/reports/.gitkeep
+ai-service/storage/*
+!ai-service/storage/.gitkeep
+backend/storage/*
+!backend/storage/.gitkeep
+
+# CSV temporary files & processing buffers
+*.csv.tmp
+*.xlsx.tmp
+*.parquet.tmp
+
+# ------------------------------------------------------------------------------
+# 8. Logs & Scratch Dumps
+# ------------------------------------------------------------------------------
+*.log
+logs/
+backend/logs/
+ai-service/logs/
+scratch/
+New folder/
+tmp/
+temp/
+Outputs/*.pdf
+.gemini/
+.agent/

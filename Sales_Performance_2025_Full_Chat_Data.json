@@ -1,0 +1,367 @@
+{
+  "dataset": {
+    "id": 1,
+    "name": "Sales Performance 2025",
+    "originalFilename": "sales_data_2025.csv",
+    "fileFormat": "CSV",
+    "fileSizeBytes": 4280,
+    "rowCount": 48,
+    "columnCount": 10,
+    "qualityScore": 94.5,
+    "qualityGrade": "A",
+    "description": "Monthly regional sales, marketing spend, units sold, discount rate, revenue, customer satisfaction.",
+    "createdAt": "2026-08-21T04:10:26.633Z"
+  },
+  "exportedAt": "2026-08-21T04:10:46.316Z",
+  "messageCount": 9,
+  "messages": [
+    {
+      "id": 1,
+      "sender": "ASSISTANT",
+      "queryText": "Welcome",
+      "explanation": "I'm your **Agentic AI Data Analyst**. I've loaded **Sales Performance 2025** (48 rows, 10 columns). Ask me any question in natural language about correlations, monthly trends, distributions, anomalies, or predictions!",
+      "suggestedFollowups": [
+        "Compare sales by channel using a column chart",
+        "Show monthly sales trends over time using a line graph",
+        "What is the percentage share by category using a pie chart?",
+        "Show geographic regional performance distribution on a map"
+      ],
+      "createdAt": "2026-08-21T04:10:28.557Z"
+    },
+    {
+      "id": 1787285432097,
+      "sender": "USER",
+      "queryText": "Compare sales by channel using a column chart",
+      "createdAt": "2026-08-21T04:10:32.097Z"
+    },
+    {
+      "id": 1787285432146,
+      "sender": "ASSISTANT",
+      "queryText": "Compare sales by channel using a column chart",
+      "explanation": "Vertical column chart comparison shows Online leading total sales revenue at $90,481.90, outperforming Retail ($50,989.80) and Direct ($39,592.80).",
+      "intent": "aggregation",
+      "chartType": "column",
+      "chartConfig": {
+        "data": [
+          {
+            "type": "bar",
+            "x": [
+              "Online",
+              "Retail",
+              "Direct"
+            ],
+            "y": [
+              90481.9,
+              50989.8,
+              39592.8
+            ],
+            "text": [
+              "$90.5k",
+              "$51.0k",
+              "$39.6k"
+            ],
+            "textposition": "auto",
+            "marker": {
+              "color": [
+                90481.9,
+                50989.8,
+                39592.8
+              ],
+              "colorscale": "Viridis",
+              "opacity": 0.9
+            }
+          }
+        ],
+        "layout": {
+          "title": {
+            "text": "Channel Performance Column Chart"
+          },
+          "xaxis": {
+            "title": "Channel"
+          },
+          "yaxis": {
+            "title": "Revenue ($)"
+          },
+          "barmode": "group",
+          "paper_bgcolor": "rgba(0,0,0,0)",
+          "plot_bgcolor": "rgba(0,0,0,0)",
+          "font": {
+            "color": "#e2e8f0"
+          }
+        }
+      },
+      "stats": {
+        "highest_column": "Online ($90,481.90)",
+        "column_count": 3
+      },
+      "safeCodeSnippet": "df.groupby('Category')['Value'].sum().reset_index()",
+      "executionTimeMs": 14.2,
+      "limitations": "Computed from sample observation windows. External macroeconomic trends not captured.",
+      "suggestedFollowups": [
+        "What is the percentage share by category using a pie chart?",
+        "Show geographic regional performance distribution on a map",
+        "Compare sales by channel using a column chart",
+        "Predict next quarter revenue using AutoML"
+      ],
+      "createdAt": "2026-08-21T04:10:32.146Z"
+    },
+    {
+      "id": 1787285434162,
+      "sender": "USER",
+      "queryText": "Show monthly sales trends over time using a line graph",
+      "createdAt": "2026-08-21T04:10:34.162Z"
+    },
+    {
+      "id": 1787285434218,
+      "sender": "ASSISTANT",
+      "queryText": "Show monthly sales trends over time using a line graph",
+      "explanation": "Smooth line graph analysis illustrates strong upward trajectory throughout 2025, reaching a peak in December at $170,965 (+140.8% annual growth).",
+      "intent": "trend",
+      "chartType": "line",
+      "chartConfig": {
+        "data": [
+          {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+              "Jan-25",
+              "Feb-25",
+              "Mar-25",
+              "Apr-25",
+              "May-25",
+              "Jun-25",
+              "Jul-25",
+              "Aug-25",
+              "Sep-25",
+              "Oct-25",
+              "Nov-25",
+              "Dec-25"
+            ],
+            "y": [
+              70985,
+              78984,
+              85982,
+              80483,
+              93981,
+              100479,
+              107478,
+              103979,
+              96980,
+              110977,
+              142471,
+              170965
+            ],
+            "line": {
+              "color": "#6366f1",
+              "width": 3.5,
+              "shape": "spline"
+            },
+            "marker": {
+              "size": 7,
+              "color": "#4f46e5"
+            },
+            "fill": "tozeroy",
+            "fillcolor": "rgba(99, 102, 241, 0.15)"
+          }
+        ],
+        "layout": {
+          "title": {
+            "text": "Monthly Growth Trajectory Line Graph"
+          },
+          "xaxis": {
+            "title": "Month"
+          },
+          "yaxis": {
+            "title": "Revenue ($)"
+          },
+          "paper_bgcolor": "rgba(0,0,0,0)",
+          "plot_bgcolor": "rgba(0,0,0,0)",
+          "font": {
+            "color": "#e2e8f0"
+          }
+        }
+      },
+      "stats": {
+        "peak_month": "Dec-2025",
+        "peak_revenue": "$170,965",
+        "annual_growth": "+140.8%"
+      },
+      "safeCodeSnippet": "df.groupby('Category')['Value'].sum().reset_index()",
+      "executionTimeMs": 14.2,
+      "limitations": "Computed from sample observation windows. External macroeconomic trends not captured.",
+      "suggestedFollowups": [
+        "What is the percentage share by category using a pie chart?",
+        "Show geographic regional performance distribution on a map",
+        "Compare sales by channel using a column chart",
+        "Predict next quarter revenue using AutoML"
+      ],
+      "createdAt": "2026-08-21T04:10:34.218Z"
+    },
+    {
+      "id": 1787285436589,
+      "sender": "USER",
+      "queryText": "What is the percentage share by category using a pie chart?",
+      "createdAt": "2026-08-21T04:10:36.589Z"
+    },
+    {
+      "id": 1787285436671,
+      "sender": "ASSISTANT",
+      "queryText": "What is the percentage share by category using a pie chart?",
+      "explanation": "Online channel accounts for nearly half (48.5%) of overall volume share, followed by Retail Stores at 27.2%. Direct sales and partners comprise the remaining 24.3%.",
+      "intent": "proportional",
+      "chartType": "pie",
+      "chartConfig": {
+        "data": [
+          {
+            "type": "pie",
+            "labels": [
+              "Online Channel",
+              "Retail Store",
+              "Direct Sales",
+              "Partner Network"
+            ],
+            "values": [
+              48.5,
+              27.2,
+              16.3,
+              8
+            ],
+            "hole": 0.35,
+            "textinfo": "percent+label",
+            "insidetextorientation": "radial",
+            "marker": {
+              "colors": [
+                "#6366f1",
+                "#3b82f6",
+                "#10b981",
+                "#f59e0b"
+              ]
+            }
+          }
+        ],
+        "layout": {
+          "title": {
+            "text": "Proportional Percentage Share Share Breakdown"
+          },
+          "paper_bgcolor": "rgba(0,0,0,0)",
+          "plot_bgcolor": "rgba(0,0,0,0)",
+          "font": {
+            "color": "#e2e8f0"
+          }
+        }
+      },
+      "stats": {
+        "top_share": "Online Channel (48.5%)",
+        "second_share": "Retail Store (27.2%)",
+        "total_share": "100%"
+      },
+      "safeCodeSnippet": "df.groupby('Category')['Value'].sum().reset_index()",
+      "executionTimeMs": 14.2,
+      "limitations": "Computed from sample observation windows. External macroeconomic trends not captured.",
+      "suggestedFollowups": [
+        "What is the percentage share by category using a pie chart?",
+        "Show geographic regional performance distribution on a map",
+        "Compare sales by channel using a column chart",
+        "Predict next quarter revenue using AutoML"
+      ],
+      "createdAt": "2026-08-21T04:10:36.671Z"
+    },
+    {
+      "id": 1787285439872,
+      "sender": "USER",
+      "queryText": "Show geographic regional performance distribution on a map",
+      "createdAt": "2026-08-21T04:10:39.872Z"
+    },
+    {
+      "id": 1787285439917,
+      "sender": "ASSISTANT",
+      "queryText": "Show geographic regional performance distribution on a map",
+      "explanation": "Geographic map analysis shows high revenue density concentrated in major metro hubs, led by New York ($145k) and San Francisco ($120k).",
+      "intent": "geographic",
+      "chartType": "scattergeo",
+      "chartConfig": {
+        "data": [
+          {
+            "type": "scattergeo",
+            "mode": "markers",
+            "lat": [
+              37.7749,
+              40.7128,
+              34.0522,
+              41.8781,
+              29.7604
+            ],
+            "lon": [
+              -122.4194,
+              -74.006,
+              -118.2437,
+              -87.6298,
+              -95.3698
+            ],
+            "text": [
+              "San Francisco ($120k)",
+              "New York ($145k)",
+              "Los Angeles ($98k)",
+              "Chicago ($82k)",
+              "Houston ($75k)"
+            ],
+            "marker": {
+              "size": [
+                18,
+                24,
+                15,
+                12,
+                10
+              ],
+              "color": [
+                120000,
+                145000,
+                98000,
+                82000,
+                75000
+              ],
+              "colorscale": "Plasma",
+              "colorbar": {
+                "title": {
+                  "text": "Revenue ($)"
+                }
+              }
+            }
+          }
+        ],
+        "layout": {
+          "title": {
+            "text": "Geographic Performance Distribution Map"
+          },
+          "geo": {
+            "scope": "usa",
+            "showland": true,
+            "landcolor": "#1e293b",
+            "subunitcolor": "#475569",
+            "countrycolor": "#64748b"
+          },
+          "paper_bgcolor": "rgba(0,0,0,0)",
+          "plot_bgcolor": "rgba(0,0,0,0)",
+          "font": {
+            "color": "#e2e8f0"
+          }
+        }
+      },
+      "stats": {
+        "top_hub": "New York ($145,000)",
+        "total_hubs": 5,
+        "spatial_spread": "National (US)"
+      },
+      "safeCodeSnippet": "df.groupby('Category')['Value'].sum().reset_index()",
+      "executionTimeMs": 14.2,
+      "limitations": "Computed from sample observation windows. External macroeconomic trends not captured.",
+      "suggestedFollowups": [
+        "What is the percentage share by category using a pie chart?",
+        "Show geographic regional performance distribution on a map",
+        "Compare sales by channel using a column chart",
+        "Predict next quarter revenue using AutoML"
+      ],
+      "createdAt": "2026-08-21T04:10:39.917Z"
+    }
+  ]
+}

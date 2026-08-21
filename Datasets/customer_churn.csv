@@ -1,0 +1,41 @@
+CustomerID,Gender,SeniorCitizen,Tenure_Months,Contract_Type,Payment_Method,Monthly_Charges,Total_Charges,Internet_Service,Tech_Support,Churn
+1001,Female,0,1,Month-to-month,Electronic check,29.85,29.85,DSL,No,1
+1002,Male,0,34,One year,Mailed check,56.95,1889.50,DSL,Yes,0
+1003,Male,0,2,Month-to-month,Mailed check,53.85,108.15,DSL,Yes,1
+1004,Male,0,45,One year,Bank transfer,42.30,1840.75,DSL,Yes,0
+1005,Female,0,2,Month-to-month,Electronic check,70.70,151.65,Fiber optic,No,1
+1006,Female,0,8,Month-to-month,Electronic check,99.65,820.50,Fiber optic,No,1
+1007,Male,0,22,Month-to-month,Credit card,89.10,1949.40,Fiber optic,No,0
+1008,Female,0,10,Month-to-month,Mailed check,29.75,301.90,DSL,No,0
+1009,Female,0,28,Month-to-month,Electronic check,104.80,3046.05,Fiber optic,Yes,1
+1010,Male,0,62,One year,Bank transfer,56.15,3487.95,DSL,No,0
+1011,Male,1,13,Month-to-month,Electronic check,98.50,1280.50,Fiber optic,No,1
+1012,Male,0,16,Two year,Credit card,18.95,326.80,No,No internet,0
+1013,Male,0,58,One year,Credit card,100.35,5681.10,Fiber optic,No,0
+1014,Male,0,49,Month-to-month,Bank transfer,103.70,5036.30,Fiber optic,No,1
+1015,Male,0,25,Month-to-month,Electronic check,105.50,2686.05,Fiber optic,Yes,0
+1016,Female,0,69,Two year,Credit card,113.25,7895.15,Fiber optic,Yes,0
+1017,Female,0,52,One year,Mailed check,20.65,1022.95,No,No internet,0
+1018,Male,0,71,Two year,Bank transfer,106.70,7382.25,Fiber optic,Yes,0
+1019,Female,0,10,Month-to-month,Credit card,55.20,528.35,DSL,Yes,1
+1020,Female,0,21,Month-to-month,Electronic check,90.05,1862.90,Fiber optic,No,0
+1021,Male,0,1,Month-to-month,Electronic check,39.65,39.65,DSL,No,1
+1022,Male,0,12,One year,Bank transfer,19.80,202.25,No,No internet,0
+1023,Female,0,72,Two year,Credit card,115.80,8424.90,Fiber optic,Yes,0
+1024,Female,0,4,Month-to-month,Electronic check,80.85,320.50,Fiber optic,No,1
+1025,Male,0,60,Two year,Credit card,25.35,1482.60,No,No internet,0
+1026,Female,0,30,Month-to-month,Bank transfer,55.30,1530.60,DSL,Yes,0
+1027,Male,1,47,Month-to-month,Electronic check,99.35,4749.15,Fiber optic,No,1
+1028,Male,0,1,Month-to-month,Electronic check,69.90,69.90,Fiber optic,No,1
+1029,Male,0,72,Two year,Credit card,90.25,6369.45,DSL,Yes,0
+1030,Female,1,17,Month-to-month,Electronic check,64.70,1093.10,DSL,No,1
+1031,Female,0,5,Month-to-month,Mailed check,51.00,247.60,DSL,No,0
+1032,Male,1,2,Month-to-month,Mailed check,50.30,92.75,DSL,No,0
+1033,Female,0,27,One year,Mailed check,66.15,1874.45,DSL,Yes,0
+1034,Male,0,1,Month-to-month,Electronic check,20.20,20.20,No,No internet,0
+1035,Male,0,1,Month-to-month,Mailed check,45.25,45.25,DSL,No,0
+1036,Female,0,47,Two year,Bank transfer,99.95,4879.90,Fiber optic,Yes,0
+1037,Male,0,14,Month-to-month,Electronic check,40.10,544.55,DSL,No,0
+1038,Female,0,46,Month-to-month,Credit card,74.80,3468.45,Fiber optic,No,0
+1039,Male,0,34,Month-to-month,Electronic check,64.85,2236.55,DSL,No,1
+1040,Female,0,11,Month-to-month,Mailed check,29.55,307.85,DSL,No,0
